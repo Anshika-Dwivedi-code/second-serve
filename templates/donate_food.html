@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food - Second Serve</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="about">
+        <h2>Donate Surplus Food</h2>
+        <p>Help reduce food waste by sharing surplus food with NGOs.</p>
+
+        <form action="/donate-food" method="POST">
+            <label>Donor Name</label><br>
+            <input type="text" name="donor_name" required><br><br>
+
+            <label>Food Name</label><br>
+            <input type="text" name="food_name" required><br><br>
+
+            <label>Quantity of Food</label><br>
+            <input type="text" name="quantity" required><br><br>
+
+            <label>Pickup Address</label><br>
+            <textarea name="address" required></textarea><br><br>
+
+            <label>Contact Number</label><br>
+            <input type="tel" name="contact" required><br><br>
+
+            <button type="submit">Submit Donation</button>
+        </form>
+
+        <p><a href="/">Back to Home</a></p>
+    </div>
+</body>
+</html>

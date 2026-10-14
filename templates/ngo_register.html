@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Registration - Second Serve</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="about">
+        <h2>NGO Registration</h2>
+        <p>Register your NGO to help distribute surplus food to people in need.</p>
+
+        <form action="/ngo-register" method="POST">
+            <label>NGO Name</label><br>
+            <input type="text" name="ngo_name" required><br><br>
+
+            <label>Contact Person</label><br>
+            <input type="text" name="contact_person" required><br><br>
+
+            <label>Email Address</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Contact Number</label><br>
+            <input type="tel" name="phone" required><br><br>
+
+            <label>Registration Number</label><br>
+            <input type="text" name="registration_number" required><br><br>
+
+            <label>NGO Address</label><br>
+            <textarea name="address" required></textarea><br><br>
+
+            <label>Create Password</label><br>
+            <input type="password" name="password" required><br><br>
+
+            <button type="submit">Register NGO</button>
+        </form>
+
+        <p><a href="/">Back to Home</a></p>
+    </div>
+</body>
+</html>

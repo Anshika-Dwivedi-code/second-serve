@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Serve - Smart Food Rescue</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Second Serve</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="/login">Login</a>
+            <a href="/ngo-register" class="register-btn">Register</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1>Give Surplus Food a <span>Second Serve</span></h1>
+
+            <p>
+                Connecting surplus food donors with NGOs to help provide
+                nutritious meals to people in need.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="/donate-food" class="primary-btn">
+                    Donate Food
+                </a>
+
+                <a href="/need-food" class="secondary-btn">
+                    Need Food
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>What is Second Serve?</h2>
+
+        <p>
+            Second Serve is a smart food rescue and redistribution system
+            designed to reduce food wastage by connecting food donors with
+            verified NGOs. Instead of allowing surplus food to go to waste,
+            the platform helps redirect it to people who need it.
+        </p>
+
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="features" id="how-it-works">
+
+        <h2>How It Works</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <h3>1. Donate Food</h3>
+                <p>
+                    Donors can provide information about surplus food
+                    available for donation.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>2. NGO Receives Request</h3>
+                <p>
+                    Registered NGOs can view available food donations
+                    and respond to suitable requests.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>3. Food Reaches People</h3>
+                <p>
+                    The donated food is collected and distributed
+                    to people in need through the NGO.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Second Serve |
+            Smart Food Rescue and Redistribution System
+        </p>
+    </footer>
+
+</body>
+</html>
